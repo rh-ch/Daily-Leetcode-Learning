@@ -23,6 +23,9 @@ int* twoSum(int* nums, int numsSize, int target, int* returnSize){
 This problem is of the time complexity O(n^2).
 The outer loop runs n times and inner loop runs n-1 times for every outer loop.
 
+Hash Map becomes a better approach to solving this problem, to reduce the time complexity to O(n) we can create a function which constantly checks whether the complement to
+the target number has occurred previously.
+
 ```
 #include <stdlib.h>
 typedef struct Entry {
